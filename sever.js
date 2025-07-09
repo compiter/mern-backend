@@ -36,5 +36,7 @@ console.log("✅ Server started");
 });
 })
 .catch((err) => {
-console.error("❌ MongoDB connection error:", err.message);
+console.error(" MongoDB connection error:", err.message);
 });
+
+app.use("/api/users", userRouter);
